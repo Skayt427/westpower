@@ -1,0 +1,292 @@
+@@include('include_html/header.html')
+
+<section class="profile container">
+  <div class="box">
+    <h2 class="title">профиль и интересы</h2>
+    <span class="subtitle">Здесь вы можете изменять свой email и пароль, а также указать дополнительные номера телефонов для использования вашей карты и указать свои интересы</span>
+
+    <div class="data">
+      <form class="data__box">
+        <span class="data__title">Email<span class="bonus">+2%</span></span>
+        <input type="email" class="data__input input" value="ivan@mail.ru" autocomplete="on">
+        <button type="submit" class="data__btn data__save">сохранить</button>
+        <button type="button" class="data__btn data__edit">изменить</button>
+      </form>
+
+      <form class="data__box">
+        <span class="data__title">Пароль</span>
+        <input type="password" class="data__input input" value="123qwe123" autocomplete="on">
+        <button type="submit" class="data__btn data__save">сохранить</button>
+        <button type="button" class="data__btn data__edit">изменить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="splitter"></div>
+
+  <div class="box">
+    <h3 class="title">дополнительные контактные телефоны</h3>
+    <span class="subtitle">
+      Вы можете добавить до двух дополнительных номеров телефона.
+      <br>
+      Указанные номера могут быть использованы членами вашей семьи для получения скидки, накопления баллов и покупок по вашей карте
+    </span>
+
+    <div class="data">
+      <form class="data__box">
+        <span class="data__title">Телефон 1</span>
+        <input type="tel" class="data__input input" autocomplete="on">
+        <button type="submit" class="data__btn data__save">сохранить</button>
+        <button type="button" class="data__btn data__edit">изменить</button>
+      </form>
+
+      <form class="data__box">
+        <span class="data__title">Телефон 2</span>
+        <input type="tel" class="data__input input" autocomplete="on">
+        <button type="submit" class="data__btn data__save">сохранить</button>
+        <button type="button" class="data__btn data__edit">изменить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="splitter"></div>
+
+  <h3 class="title">ПОДПИСКА НА УВЕЛИЧЕННУЮ СКИДКУ</h3>
+  <span class="subtitle">Вы можете выбрать один магазин для предоставления увеличенной скидки. Выбор можно сделать не более 1 раза в месяц. По истечению календарного месяца скидка будет обнулена автоматически</span>
+
+  <div class="dropdown">
+    <div class="dropdown__top js-toggle" data-container="toggle-1">
+      <span class="dropdown__title">Выберите магазин</span>
+      <span class="dropdown__arrow icon-triangle-top"></span>
+    </div>
+
+    <form class="dropdown__content" id="toggle-1">
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/calvin-klein.png" alt="" class="brand__img">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/tommy-hilfiger.png" alt="" class="brand__img">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <div class="brand__inner">
+          <img src="img/brands/inwearmatinique.png" alt="" class="brand__img">
+        </div>
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <div class="brand__inner">
+          <img src="img/brands/markis.png" alt="" class="brand__img">
+        </div>
+        <img src="img/brands/markis-2.png" alt="" class="brand__img brand__img_small">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <div class="brand__inner">
+          <img src="img/brands/truman.png" alt="" class="brand__img">
+        </div>
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <div class="brand__inner">
+          <img src="img/brands/clarks.png" alt="" class="brand__img">
+        </div>
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/crocs.png" alt="" class="brand__img">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <div class="brand__inner">
+          <img src="img/brands/reima.png" alt="" class="brand__img">
+        </div>
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/soho.png" alt="" class="brand__img">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/mexx.png" alt="" class="brand__img">
+      </label>
+
+      <label class="brand">
+        <input type="radio" class="brand__input" name="discount">
+        <span class="brand__checkbox"></span>
+        <img src="img/brands/origami.png" alt="" class="brand__img">
+      </label>
+    </form>
+  </div>
+
+  <h3 class="title">ПОДПИСКА НА УВЕДОМЛЕНИЯ ОБ АКЦИЯХ</h3>
+  <span class="subtitle">Вы можете выбрать один или несколько магазинов, по которым вам интересно получать предложения</span>
+
+  <div class="brands">
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/tommy-hilfiger.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/calvin-klein.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/crocs.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/inwearmatinique.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/clarks.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/reima.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/markis.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/soho.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/mexx.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/truman.png" alt="" class="brand__img">
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="increasedDiscount">
+      <span class="brand__checkbox"></span>
+      <img src="img/brands/origami.png" alt="" class="brand__img">
+    </label>
+  </div>
+
+  <h3 class="title">ЛЮБИМЫЙ БРЕНД</h3>
+  <span class="subtitle">Расскажите нам о своих любимых брендах, а мы учтем ваш выбор при составлении индивидуальных предложений</span>
+
+  <div class="brands">
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">CALVIN KLEIN JEANS</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">CALVIN KLEIN JEANS</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">CALVIN KLEIN JEANS</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">UNITED COLORS OF BENETTON</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">UNITED COLORS OF BENETTON</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">UNITED COLORS OF BENETTON</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">REIMA</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">REIMA</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">REIMA</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">STRELLSON</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">STRELLSON</span>
+    </label>
+
+    <label class="brand">
+      <input type="checkbox" class="brand__input" name="favoriteDiscount">
+      <span class="brand__checkbox"></span>
+      <span class="brand__name">STRELLSON</span>
+    </label>
+  </div>
+</section>
+
+@@include('include_html/footer.html')
